@@ -1,0 +1,143 @@
+/* General resets and styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4decb;
+}
+
+.navbar-brand {
+  color: rgb(113, 52, 3);
+  font-weight: 800;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.nav-link {
+  color: rgb(86, 27, 30);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.register-page {
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-sizing: border-box;
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 400px; /* Maximum width for larger screens */
+}
+
+/* Transection page */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fef0cf;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.switch-icons {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: rgb(200, 5, 54);
+}
+
+.inactive-icon {
+  color: rgb(0, 0, 0);
+}
+/* Table responsiveness */
+.ant-table-wrapper {
+  overflow-x: auto;
+  padding: 0 15px;
+}
+
+.ant-table {
+  min-width: 600px;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  white-space: nowrap;
+}
+.ant-table .actions {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icons */
+}
+
+/* Ensure icons do not overflow and stay within the background */
+.ant-table .actions .anticon {
+  font-size: 16px; /* Adjust icon size */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for icons */
+.ant-table .actions .anticon:hover {
+  color: rgb(200, 5, 54); /* Change color on hover if needed */
+}
+/* Ensure the action column background matches the table row background */
+.ant-table-tbody > tr > td:last-child {
+  background-color: #fcf0eb; /* Match with your filters or background color */
+}
+
+@media (max-width: 1024px) {
+  .ant-table {
+    min-width: 100%;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-table {
+    min-width: 100%;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ant-table {
+    min-width: 100%;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 10px;
+    padding: 4px;
+  }
+}

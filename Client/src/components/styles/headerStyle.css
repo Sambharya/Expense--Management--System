@@ -1,0 +1,45 @@
+/* header.css */
+
+.navbar {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item .btn {
+  margin-left: 10px;
+}
+
+/* Align hamburger menu to the right */
+.navbar-toggler {
+  margin-left: auto;
+}
+
+/* Ensure the navbar items are centered on mobile screens */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-nav .btn {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
